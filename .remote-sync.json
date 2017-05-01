@@ -1,0 +1,16 @@
+{
+  "transport": "ftp",
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "ftp.byethost7.com",
+  "port": "21",
+  "target": "backup",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "b7_19121124",
+  "password": "@ndro!D44",
+  "watch": []
+}

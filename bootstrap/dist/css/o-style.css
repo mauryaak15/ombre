@@ -1,0 +1,278 @@
+
+
+
+/***********************************Sticky footer Css **************************/
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -30px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer_main_div, .page-wrap:after {
+  height: 30px!important;
+}
+
+
+
+/*------------------------------------------------------------------*/
+body{
+  background-image: url('../../../images/roughcloth.png');
+  padding: 0;
+  margin: 0;
+}
+#fixednav{
+  transition: all 0.8s ease-in-out;
+}
+
+.head-strip{
+    min-height: 30px;
+    background: #000;
+    line-height: 2;
+    color: #fff;
+    padding: 0 0;
+}
+.pad-left{
+    padding-left: 6px;
+}
+.pad-right{
+    padding-right: 6px;
+}
+.social-icon-color{
+    color: #fff;
+}
+.social-icon-color:hover{
+    color: #d3d3d3;
+}
+.contact-info-container{
+    text-align: right;
+}
+.contact-info{
+    text-decoration: none!important;
+    color: #fff!important;
+}
+.contact-info:hover{
+    color: #d3d3d3!important;
+    text-decoration: none!important;
+}
+.logo-container{
+    font-family: "Segoe UI";
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1;
+    padding-left: 6px;
+    padding-top: 5px;
+}
+.ombre-logo{
+    text-decoration: none !important;
+    color: #696969 !important;
+}
+.ombre-logo:hover{
+   text-decoration: none;
+    color: #151515 !important;
+}
+
+.com{
+    font-size: 28px;
+    color: #151515;
+
+}
+.logo-text{
+    text-align: right;
+    font-family: "Segoe UI";
+    letter-spacing: 4px;
+    vertical-align: bottom;
+    line-height: 50px;
+    font-size: 20px;
+    padding-right: 6px;
+}
+.all-padding-zero{
+    padding: 0 0;
+}
+.card-main-cont{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    width: 80%;
+    transition: 0.3s;
+    margin: auto;
+    background: #f2f2f2;
+}
+.card-main-cont:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.card-txt-cont{
+    padding: 5px 16px;
+}
+.avatar{
+    width: 100%;
+}
+.marg-bot-up{
+    margin: 20px 0;
+}
+.btn-more{
+    margin-top: 20px;
+}
+hr{
+    margin-bottom: 10px;
+    border-color: #c0c0c0 !important;
+}
+.sub-headings{
+    font-family: "Segoe UI";
+    font-size: 40px;
+    font-weight: 500;
+
+}
+.product-icon{
+    width: 70%;
+    border-radius: 50%;
+    margin: auto;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.product-icon-container{
+    width: 80%;
+    transition: 0.3s;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    margin: auto;
+    background: #f2f2f2;
+}
+.product-icon-container:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+.product-hr{
+    margin-bottom: 0;
+}
+.product-heading{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#mycarousel .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+.footer_main_div{
+    background-color: #222!important;
+    color: white!important;
+    height: 30px!important;
+
+}
+.footer_main_div a {
+    color: white!important;
+}
+.footer_main_div a:hover{
+    text-decoration: none!important;
+    color: #d3d3d3!important;
+}
+.pad-left-zero{
+    padding-left: 0;
+
+}
+
+#fixednav ul.navbar-right ul.dropdown-menu li a{
+  display: block;
+}
+
+@media only screen and (min-width: 855px) and (max-width: 991px){
+    .logo-container{
+        text-align: center;
+    }
+    .logo-text{
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 854px){
+    .logo-text,.head-strip,.logo-container{
+        display: none;
+    }
+    .hide{
+        display: none;
+    }
+    .navbar-brand{
+        font-size: 30px;
+    }
+
+    /*To collapse navbar early*/
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
+.cart-count{
+  background-color: red;
+
+}
+
+
+/* side nav*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media only screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 767px){
+  .black-strip-bars{
+    display: none;
+  }
+}
+
+.black-strip-bars{
+  cursor: pointer;
+}
+.black-strip-bars:hover{
+  color: #d3d3d3;
+}

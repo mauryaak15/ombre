@@ -1,0 +1,70 @@
+@media only screen and (min-width: 992px) {
+ .sub_total_div{
+   margin-top: 70px;
+ }
+}
+@media only screen and (max-width: 991px){
+
+}
+.payment_div,.address_not_found_div{
+  letter-spacing: 2px;
+}
+.payment_div h5,.address_not_found_div h5{
+    line-height: 1.7;
+}
+.cod_div{
+  margin-top: 18px;
+}
+.paytm_div .paytm-img{
+  display: inline-block;
+}
+.panel-title a{
+  display: block;
+}
+.update_address_div button{
+  display: block;
+  margin: auto;
+}
+.edit-delete-btns{
+  vertical-align: middle!important;
+}
+table.address_table{
+  position: relative;
+}
+
+table.address_table.selected_address::before{
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f00c";
+  font-size: 25px;
+  color: #009900;
+}
+
+.address_label{
+  display: block;
+  font-weight: normal!important;
+}
+.address_label table.address_table .address_holder_name{
+    -webkit-transition: border-size,font-size .4s ease-in-out;
+    transition: border-size,font-size .4s ease-in-out;
+
+}
+.address_label:hover table.address_table{
+  border: 1px solid #009900;
+  border-collapse: separate;
+}
+.address_label:hover .address_holder_name{
+  font-size: 30px;
+}
+
+/*validation classes for input field border*/
+.input_field_error_border{
+  /*66afe9*/
+  border-color : #FF0000!important;
+  box-shadow : inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6)!important;
+}
+.input_field_success_border{
+  /*66afe9*/
+  border-color : #198c19!important;
+  box-shadow : inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(25, 140, 25, 0.6)!important;
+}

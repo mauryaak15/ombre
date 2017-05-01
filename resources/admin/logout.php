@@ -1,0 +1,11 @@
+<?php
+require_once('../config.php');
+if(isset($_SESSION['admin_id'])&&!empty($_SESSION['admin_id'])){
+  unset($_SESSION['admin_id']);
+  redirect("../../ombre.php");
+  die();
+}else{
+  redirect('../../ombre.php');
+  die();
+}
+?>
