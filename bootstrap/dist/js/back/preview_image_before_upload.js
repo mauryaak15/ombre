@@ -1,4 +1,4 @@
-<!-- Script to preview image befor uploading -->
+// Script to preview image befor uploading 
 function previewImage(event) {
       //console.log(event.target.files.length);
           if(event.target.files.length > 5){
@@ -7,6 +7,7 @@ function previewImage(event) {
           }else{
             var i = 1;
             var file = event.target.files[i-1];
+            $(".img_preview_div").html(""); //To clear the previous images if input is given again
             $.each(event.target.files, function(i, file) {
               var img = document.createElement("img");
               var img_div = document.createElement("div");
